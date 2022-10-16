@@ -22,8 +22,9 @@ async def start_message(c,m):
                         InlineKeyboardButton("Bot Dev", url='https://t.me/KGN_OFFICIAL'),
                         InlineKeyboardButton("Our Group", url='https://t.me/+Y3wu8xwv2F0wMTJl')
                     ]
+                    [
                         InlineKeyboardButton("Our Channel", url='https://t.me/KGNOFFICIAL')
-                    
+                    ]
                 ]
             )
         )
