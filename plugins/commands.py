@@ -24,6 +24,7 @@ async def start_message(c,m):
                         InlineKeyboardButton("Our Channel", url='https://t.me/KGNOFFICIAL')
                         ]
                         )
+                        )
                    else:
                         return await group_send_handler(c,m)
 
