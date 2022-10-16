@@ -14,7 +14,7 @@ bot = Client('droplink search bot',
              workers=50,
     sleep_threshold=10)
 
-print("Bot Started")
+print("Bot Started. Special thanks❤️ to ZAHID[@KGN_OFFICIAL].")
 
 # Running the bot.
 bot.run()
