@@ -17,14 +17,11 @@ async def start_message(c,m):
         return await m.reply_photo("https://telegra.ph/file/48ac7ebb8da512ce4a809.jpg",
             caption=START_MESSAGE.format(m.from_user.mention),
             reply_markup=InlineKeyboardMarkup([
+                      [
                         InlineKeyboardButton("Bot Dev", url='https://t.me/KGN_OFFICIAL'),
                         InlineKeyboardButton("Our Group", url='https://t.me/+Y3wu8xwv2F0wMTJl')
-                        ])
-                        (
-                        [
-                        InlineKeyboardButton("Our Channel", url='https://t.me/KGNOFFICIAL')
-                        ]
-                        )
+                       ]
+                       ]
                         )
                    else:
                         return await group_send_handler(c,m)
