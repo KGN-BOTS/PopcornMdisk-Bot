@@ -24,6 +24,7 @@ async def start_message(c,m):
                        ]
                     )
                         )
+
                    else:
                         return await group_send_handler(c,m)
 
