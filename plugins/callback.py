@@ -111,6 +111,9 @@ async def next_btn_cb_handler(client: Client, query: CallbackQuery):
                 [InlineKeyboardButton("⏪ BACK", callback_data=f"back_{int(index)+1}_{keyword}")]
             )
             buttons.append(
+                [InlineKeyboardButton("🤗 Official Channel", url="https://t.me/KGNOFFICIAL")]
+            )
+            buttons.append(
                 [InlineKeyboardButton(f"📃 Pages {int(index)+2}/{data['total']}", callback_data="pages")]
             )
 
@@ -131,7 +134,10 @@ async def next_btn_cb_handler(client: Client, query: CallbackQuery):
                 [InlineKeyboardButton("🧐 Help", url="https://t.me/KGN_OFFICIAL")]
             )
             buttons.append(
-                [InlineKeyboardButton("⏪ BACK", callback_data=f"back_{int(index)+1}_{keyword}"),InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)+1}_{keyword}")]
+                [InlineKeyboardButton("⏪ BACK", callback_data=f"back_{int(index)+1}_{keyword}")]
+            )
+            buttons.append(
+                [InlineKeyboardButton("🤗 Official Channel", url="https://t.me/KGNOFFICIAL")]
             )
             buttons.append(
                 [InlineKeyboardButton(f"📃 Pages {int(index)+2}/{data['total']}", callback_data="pages")]
@@ -179,6 +185,9 @@ async def back_btn_cb_handler(client: Client, query: CallbackQuery):
                 [InlineKeyboardButton("🧐 Help", url="https://t.me/KGN_OFFICIAL")]
             )
             buttons.append(
+                [InlineKeyboardButton("🤗 Official Channel", url="https://t.me/KGNOFFICIAL")]
+            )
+            buttons.append(
                     [InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)-1}_{keyword}")]
                 )
             buttons.append(
@@ -207,6 +216,9 @@ async def back_btn_cb_handler(client: Client, query: CallbackQuery):
             )
             buttons.append(
                 [InlineKeyboardButton("⏪ BACK", callback_data=f"back_{int(index)-1}_{keyword}"),InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)-1}_{keyword}")]
+            )
+            buttons.append(
+                [InlineKeyboardButton("🤗 Official Channel", url="https://t.me/KGNOFFICIAL")]
             )
             buttons.append(
                 [InlineKeyboardButton(f"📃 Pages {int(index)}/{data['total']}", callback_data="pages")]
