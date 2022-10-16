@@ -22,6 +22,7 @@ async def start_message(c,m):
                         InlineKeyboardButton("Our Group", url='https://t.me/+Y3wu8xwv2F0wMTJl')
                        ]
                        ]
+                    )
                         )
                    else:
                         return await group_send_handler(c,m)
