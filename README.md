@@ -4,7 +4,7 @@
 
 #### Deploy To Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Zahidempire/PopcornMdisk-Bot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/KGN-BOTS/PopcornMdisk-Bot)
 
 ##### Required Variables
 
