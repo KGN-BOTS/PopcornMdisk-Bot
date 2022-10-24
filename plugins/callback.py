@@ -28,7 +28,7 @@ async def cb_send_handler(c,m):
     else:
         reply_markup = InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("Join", url=f"https://t.me/{USERNAME}")],
+            [InlineKeyboardButton("Join", url=f"https://t.me/KGNOFFICIAL")],
         ])   
 
     txt = await m.message.reply(
@@ -108,7 +108,8 @@ async def next_btn_cb_handler(client: Client, query: CallbackQuery):
                 [InlineKeyboardButton("🧐 Help", url="https://t.me/KGN_OFFICIAL")]
             )
             buttons.append(
-                [InlineKeyboardButton("⏪ BACK", callback_data=f"back_{int(index)+1}_{keyword}")]
+                [InlineKeyboardButton("⏪ BACK", callback_data=f"back_{int(index)+1}_{keyword}")]          
+                [InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)-1}_{keyword}")]
             )
             buttons.append(
                 [InlineKeyboardButton("🤗 Official Channel", url="https://t.me/KGNOFFICIAL")]
@@ -135,7 +136,8 @@ async def next_btn_cb_handler(client: Client, query: CallbackQuery):
             )
             buttons.append(
                 [InlineKeyboardButton("⏪ BACK", callback_data=f"back_{int(index)+1}_{keyword}")]
-            )
+                [InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)-1}_{keyword}")]
+                )
             buttons.append(
                 [InlineKeyboardButton("🤗 Official Channel", url="https://t.me/KGNOFFICIAL")]
             )
@@ -216,6 +218,7 @@ async def back_btn_cb_handler(client: Client, query: CallbackQuery):
             )
             buttons.append(
                 [InlineKeyboardButton("⏪ BACK", callback_data=f"back_{int(index)-1}_{keyword}"),InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)-1}_{keyword}")]
+                [InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)-1}_{keyword}")]
             )
             buttons.append(
                 [InlineKeyboardButton("🤗 Official Channel", url="https://t.me/KGNOFFICIAL")]
