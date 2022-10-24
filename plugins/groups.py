@@ -41,7 +41,7 @@ async def group_send_handler(c: Client, m:Message):
     else:
         reply_markup = InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("Join", url=f"https://t.me/{USERNAME}")],
+            [InlineKeyboardButton("Join", url=f"https://t.me/@KGNOFFICIAL")],
         ])   
 
     await txt.edit(
